@@ -1,9 +1,14 @@
 {
-   "manifest_version": 3,
-   "name": "Mensaje directo whatsapp",
-   "description": "Base Level Extension",
-   "version": "1.0",
-   "action": {
-     "default_popup": "wa-direct.html"
-   }
- }
+  "manifest_version": 3,
+  "name": "Mensaje directo whatsapp",
+  "description": "Envía mensajes de WhatsApp directos sin guardar el contacto",
+  "version": "1.1",
+  "permissions": ["sidePanel"],
+  "side_panel": {
+    "default_path": "wa-direct.html"
+  },
+  "action": {},
+  "background": {
+    "service_worker": "background.js"
+  }
+}
